@@ -1,0 +1,121 @@
+@use "../../styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo&family=Audiowide&family=Gruppo&family=Lexend+Peta:wght@500;600;700&family=Montserrat:ital,wght@1,500&family=Rajdhani:wght@300;400&family=Roboto:wght@400;500&family=Russo+One&family=Sora:wght@500;600&display=swap');
+
+// font-family: 'Alfa Slab One', cursive;
+// font-family: 'Arvo', serif;
+// font-family: 'Audiowide', cursive;
+// font-family: 'Gruppo', sans-serif;
+// font-family: 'Lexend Peta', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Rajdhani', sans-serif;
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Russo One', sans-serif;
+// font-family: 'Sora', sans-serif;
+
+* {
+    .heroSection {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(black, #66371767);
+
+        .start {
+            overflow: hidden;
+            @include mixins.flexCenter;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .name {
+            @include mixins.flexCenter;
+            font-size: 15rem;
+            font-family: 'Alfa Slab One', cursive;
+        }
+
+        .bigo {
+            color: #ff98a2;
+            transition: font-size 1s;
+            font-weight: 900;
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .content {
+            color: #ff98a2;
+            @include mixins.flexCenter;
+            opacity: 0;
+            transition: opacity ease-in 0.5s;
+            position: relative;
+
+            &::-webkit-scrollbar {
+                width: 0.1rem;
+              }
+          
+              &::-webkit-scrollbar-track {
+                background-color: transparent; 
+              }
+          
+              &::-webkit-scrollbar-thumb {
+                background-color: transparent; 
+              }
+            .cursor1 {
+                border: 0.1rem solid rgba(255, 255, 255, 0.772);
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                z-index: 7;
+            }
+
+            .intro {
+                background: linear-gradient(black, #66371767);
+                position: absolute;
+                top: 0;
+                @include mixins.flexCenter;
+                flex-direction: column;
+                font-family: 'Russo One', sans-serif;
+                font-weight: 900;
+            }
+
+            .para {
+                font-size: 3.5rem;
+                padding-top: 20vh;
+                width: 70vw;
+                text-align: center;
+            }
+
+            .boxes {
+                padding-top: 30vh;
+                // padding-left: 100vw;
+                padding-bottom: 20vw;
+                @include mixins.flexCenter;
+            }
+
+            .box1 {
+                height: 40vh;
+                width: 40vw;
+                border: 0.01rem solid white;
+            }
+
+            .box2 {
+                height: 40vh;
+                width: 40vw;
+                border: 0.01rem solid white;
+            }
+
+            .box3 {
+                height: 40vh;
+                width: 40vw;
+                border: 0.01rem solid white;
+            }
+
+            .box4 {
+                height: 40vh;
+                width: 40vw;
+                border: 0.01rem solid white;
+            }
+        }
+    }
+}
